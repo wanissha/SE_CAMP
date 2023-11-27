@@ -3,39 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
 </head>
 <body>
+    <div class="container">
+        <h1>Workshop #HTML-FORM</h1>
             <form action="#">
                 <table>
                     <tr>
                         <td>ชื่อ</td>
-                        <td><input type="text"></td>
+                        <td><input type="text" placeholder="วณิชชา"></td>
                     </tr>
 
                     <tr>
                         <td>นามสกุล</td>
-                        <td><input type="text"></td>
+                        <td><input type="text" placeholder="ยีขะเด"></td>
                     </tr>
                     
-                    <tr>
-                        <td><input type="date"></td>
+                    <tr>  
                         <td>วัน/เดือน/ปีเกิด</td>
-                    
+                        <td><input type="date"></td>
                     </tr>
                     
                     <tr>
                         <td>อายุ</td>
-                        <td><input type="number"></td>
+                        <td><input type="number" placeholder="19"></td>
                     </tr>
                     
                     <tr>
                         <td>เพศ</td>
-                        <td>
+                        <td id="gender">
                             <input id="radio_m" type="radio" name="same_radio">
-                            <label for="radio_m">ชาย</label>
-                        </td>
-                        <td>
+                            <label for="radio_m">ชาย</label> 
                             <input id="radio_f" type="radio" name="same_radio">
                             <label for="radio_f">หญิง</label>
                         </td>
@@ -48,28 +48,45 @@
                    
                     <tr>
                         <td>ที่อยู่</td>
-                        <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                        <td>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </td>
                     </tr>
 
                     <tr>
                         <td>สีที่ชอบ</td>
-                        <td>
-                            <select>
-                                <!-- <option value="" disabled selected></option>
-                                <option>แดง</option>
-                                <option>แดง</option>
-                                <option>แดง</option>
-                                <option>แดง</option>
-                                <option>แดง</option>
-                                <option>แดง</option>
-                                <option>แดง</option>
-                                <option>แดง</option> -->
+                        <td>  
                                 <input type="color">
-                            </select>
                         </td>
                     </tr>
+
+                    <tr>
+                        <td>เพลงที่ชอบ</td>
+                        <td id="songs">
+                            <input id="radio_1" type="radio" name="same_radio">
+                            <label for="radio_1">เพื่อชีวิต</label>
+                            <input id="radio_2" type="radio" name="same_radio">
+                            <label for="radio_2">ลูกทุ่ง</label>
+                            <input id="radio_3" type="radio" name="same_radio">
+                            <label for="radio_3">อื่น ๆ</label>
+                        </td>
+                    </tr>
+                  
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>ยินยอมให้เก็บข้อมูล</td>
+                    </tr>
                     
+                    <tr>
+                        <td>
+                            <input type="reset" value="Reset">
+                        </td>
+                        <td>
+                             <input type="submit" value="Submit">
+                        </td>
+                    </tr>
                 </table>
             </form>
+        </div>
 </body>
 </html>
