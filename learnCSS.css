@@ -21,11 +21,11 @@
         background: #ff1876;
         color: #fff;
         border-radius: 30px;
-        border: none;
+        border: 4px dotted #fff;
         outline: none;
         cursor: pointer;
         position: relative;
-        box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);   
+        box-shadow: 0 2px 25px rgba(0, 0, 0, 0);   
         transition: box-shadow 0.25s;
         margin-left: 0;
         z-index: 2;
@@ -33,7 +33,7 @@
         align-items: center;
     }
 .btn:hover {
-    background-color: #de3c7d;
+    background-color: rgba(26, 6, 16, 0.2);
 }
 .btn:active {
     background: #d80972;
